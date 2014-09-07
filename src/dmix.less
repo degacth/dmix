@@ -3,6 +3,13 @@
   height: @size;
 }
 
+.full-position(@position: 0) {
+  top:    @position;
+  bottom: @position;
+  left:   @position;
+  right:  @position;
+}
+
 .outline() { outline: 1px dotted #333 }
 .reset(@reset: 0) { margin: @reset; padding: @reset; }
 
