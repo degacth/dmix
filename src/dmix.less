@@ -67,6 +67,15 @@
   overflow: hidden;
 }
 
+// Вертикальная центровка
+.vertical-middle(@pos: 50%) {
+  position: absolute;
+  top: @pos;
+  left: @pos;
+  
+  .transform(translate(-@pos, -@pos));
+}
+
 // Круглые края
 .border-radius(@radius) {
   -webkit-border-radius: @radius;
